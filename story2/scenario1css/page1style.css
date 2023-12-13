@@ -1,0 +1,100 @@
+body{
+    
+    background-image: url('../img/luck.jpg');
+    /* background-size: cover; */
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    
+}
+
+
+
+.container{
+    
+    width:80%;
+    height: 600px;
+    margin: auto;
+    margin-top: 25px;
+    /* background-image: url('../../images/dhaka.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    
+}
+table{
+    margin: auto;
+}
+
+tr,td{
+    border: 0px solid white;
+    /* border-style: dashed; */
+    width: 520px;
+    height: 100px;
+    padding: 5px;
+}
+
+.entry{
+    text-align: right;
+    letter-spacing: 20px;
+    margin-right: 50px;
+}
+
+.entry >a> img{
+    height: 35px;
+    border-radius: 5px;
+    border-style: dashed;
+}
+
+.entry >a> img:hover{
+    box-shadow: 1px 1px 1px 1px #f0eeee;
+	
+    
+   
+}
+
+.game_icon>a> img:hover{
+    box-shadow: 1px 1px 1px 1px #f0eeee;
+    transition-duration: 0.1s;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+
+  
+  div.transbox {
+    margin: 30px;
+    background-color:#c74747;
+    border: 0px solid black;
+    padding: 10px;
+    opacity: 0.8;
+    color: white;
+    font-size: 30px;
+    width: 350px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  
+  div.transbox p {
+    margin: 0%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    
+  }
+
+    
+  div.transbox:hover {
+  
+    opacity: 1.0;
+   
+  }
+
+a{
+    text-decoration: none;
+}

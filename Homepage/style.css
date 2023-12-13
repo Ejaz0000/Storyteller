@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url("web-back.PNG");
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2px;
+    margin: 0;
+}
+
+
+
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    
+}
+
+
+
+.nav_links li img{
+    width: 60%;
+    height: 60%;
+    margin-right: -30px;
+}
+
+.nav_links .home{
+    margin-right: -50px;
+    padding: 0;
+}
+
+
+.logo {
+
+    padding-left: 10px;
+    
+}
+
+.logo img{
+    width: 50%;
+    height: 50%;
+}
+
+
+
+.game_box1 .second_layer{
+    position: absolute;
+   background-color: rgb(181, 91, 163);
+   width: 1000px;
+   height: 170px;
+   top: 14%;
+   left: 15%;
+}
+
+.game_box1 .main_layer{
+     position: absolute;
+    background-color: white;
+    width: 1000px;
+    height: 170px;
+    top: 12%;
+    left: 14%;
+}
+
+.game_box2 .second_layer{
+    position: absolute;
+   background-color: rgb(181, 91, 163);
+   width: 1000px;
+   height: 170px;
+   top: 43%;
+   left: 15%;
+}
+
+.game_box2 .main_layer{
+     position: absolute;
+    background-color: white;
+    width: 1000px;
+    height: 170px;
+    top: 41%;
+    left: 14%;
+}
+
+.game_box3 .second_layer{
+    position: absolute;
+   background-color: rgb(181, 91, 163);
+   width: 1000px;
+   height: 170px;
+   top: 72%;
+   left: 15%;
+}
+
+.game_box3 .main_layer{
+     position: absolute;
+    background-color: white;
+    width: 1000px;
+    height: 170px;
+    top: 70%;
+    left: 14%;
+}
+
+.game_box1 .logo img{
+    
+    width: 44.5%;
+    height: 44.5%;
+}
+.game_box1 .logo{
+    
+    position: absolute;
+    left: -10px;
+}
+
+.game_box1 .text{
+    position: absolute;
+    left: 32%;
+    padding: 2%;
+
+}
+
+.game_box1 .text h3{
+    width: 40px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px;
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.game_box1 .text p{
+    padding-top: 3%;
+    padding-left: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blueviolet;
+
+}
+
+.game_box1 .button{
+    position: absolute;
+    left: 90%;
+    top: 70%;
+}
+
+.game_box1 .button img{
+    width: 65%;
+    height: 50%;
+}
+
+
+
+
+.game_box3 .logo img{
+    
+    width: 51.5%;
+    height: 51.5%;
+}
+.game_box3 .logo{
+    
+    position: absolute;
+    left: -10px;
+}
+
+.game_box3 .text{
+    position: absolute;
+    left: 32%;
+    padding: 2%;
+
+}
+
+.game_box3 .text h3{
+    width: 60px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px;
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.game_box3 .text p{
+    padding-top: 3%;
+    padding-left: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blueviolet;
+
+}
+
+.game_box3 .button{
+    position: absolute;
+    left: 90%;
+    top: 70%;
+}
+
+.game_box3 .button img{
+    width: 65%;
+    height: 50%;
+}
+
+
+
+.game_box2 .logo img{
+    
+    width: 51.5%;
+    height: 51.5%;
+}
+.game_box2 .logo{
+    
+    position: absolute;
+    left: -10px;
+
+}
+.game_box2 .logo img{
+    
+    width: 44%;
+    
+}
+
+.game_box2 .text{
+    position: absolute;
+    left: 32%;
+    padding: 2%;
+
+}
+
+.game_box2 .text h3{
+    width: 100px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px;
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.game_box2 .text p{
+    padding-top: 3%;
+    padding-left: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blueviolet;
+
+}
+
+.game_box2 .button{
+    position: absolute;
+    left: 90%;
+    top: 70%;
+}
+
+.game_box2 .button img{
+    width: 65%;
+    height: 50%;
+}

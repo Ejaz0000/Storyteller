@@ -1,0 +1,94 @@
+
+
+<!-- // include('../db_connect.php');
+
+// session_start();
+
+// if(isset($_SESSION['username'])){
+//     $username = $_SESSION['username'];
+//     $_SESSION['username'] = $username;
+// }
+
+// $sql = "SELECT * FROM players WHERE username='$username'";
+// $result=mysqli_query($conn,$sql);
+// $user=mysqli_fetch_assoc($result);
+// mysqli_free_result($result);
+// $highestscore=$user['s1score'];
+
+
+// mysqli_close($conn); -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/ntnbzr.jpg">
+    <link rel="stylesheet" href="scenario1css/page1style.css">
+    <title>Tour to UIU 1</title>
+</head>
+<body>
+      <div class="container">
+        <form method="post">
+        <table>
+            <tr style="height:120px ;">
+                <td>
+                    <abbr title="Click to go back to home">
+                        <a href="../homepage.php"> 
+                            <!-- <img src="../img/luck.jpg" height="70px" width="200px"> <br> <p></a></abbr> -->
+                </td>
+                <td>
+                    <div class="entry">
+                         <!-- <img src="../images/travel_to_gulistan.PNG" height="70px" width="70px" style="border-radius:50% ;">  -->
+                        <a href="../logout.php"> 
+                            <img src="../img/logout.png" style="margin-bottom:20px ;">  </a>
+
+                    </div>
+                   
+                </td>
+            </tr>
+
+            <tr style="height: 450px;">
+
+                <td class="yy" >
+                    <img src="../img/gdluck.png" height="420px" style="border-radius: 20px;" >
+                </td>
+                <td>
+                   
+                    <div class="background">
+                        <a href="page2.html">
+                            <div class="transbox">
+                                <p>Start Game</p> 
+                            </div>
+                        </a>
+                    </div>
+
+                      <div class="background">
+                        <a href="../leaderboard1.php">
+                            <div class="transbox">
+                                <p>Leaderboard</p> 
+                             </div>
+                        </a>
+                       
+                      </div>
+
+                      <div class="background">
+                        <div class="transbox" style="background-color: #07db07;font-size: 20px;border-radius: 5px;">
+                          <p>Your Highest Score: <?php echo $highestscore; ?></p>
+                        </div>
+                      </div>
+
+                    
+                    
+                </td>
+            </tr>
+        </table>
+        </form>
+      </div>
+
+
+</body>
+</html>

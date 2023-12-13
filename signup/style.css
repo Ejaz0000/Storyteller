@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url("web-back.PNG");
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+
+    position: absolute;
+    top: -23%;
+    left: 25%;
+    
+
+}
+
+.logo img{
+ 
+    width: 90%;
+    height: 90%;
+
+
+}
+
+
+.login_box .second_layer{
+    position: absolute;
+   background-color: rgb(181, 91, 163);
+   width: 400px;
+   height: 420px;
+   top: 26.5%;
+   left: 35%;
+}
+
+.login_box .main_layer{
+     position: absolute;
+    background-color: white;
+    width: 400px;
+    height: 420px;
+    top: 23%;
+    left: 34%;
+}
+
+.sign{
+    position: absolute;
+    top: 10%;
+    left: 26%;
+
+}
+
+.sign img{
+
+    width: 60%;
+    height: 60%;
+}
+
+.submit{
+
+    position: absolute;
+    top: 84%;
+    left: 38%;
+    cursor: pointer;
+
+}
+
+.submit img{
+
+    width: 40%;
+    height: 40%;
+
+}
+
+
+
+.form{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.form input{
+    background: #d9d9d9;
+    border: none;
+    
+    width: 55%;
+    height: 9%;
+    margin-top: 7%;
+    
+    padding-left: 5%;
+    padding: 3%;
+    
+}
+

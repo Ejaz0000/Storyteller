@@ -1,0 +1,206 @@
+<!-- <?php -->
+
+<!-- include('../db_connect.php');
+
+session_start();
+
+$wallet=500;
+$hours=11;
+$minutes=0;
+$luck=rand(100,150); -->
+
+<!-- if(isset($_SESSION['username'])){
+    $username = $_SESSION['username'];
+    $_SESSION['username'] = $username;
+} -->
+
+<!-- function createConfirmationmbox(){
+    echo '<script type="text/javascript">'; -->
+
+<!-- //     echo ' function logout(newurl){';
+//     echo 'if(confirm("Are you sure you want to logout? All progress will be undone.")){';
+//     echo 'document.location = newurl;';
+//     echo '}';
+//     echo '}';
+
+// //     echo ' function homepage(newurl){';
+// //     echo 'if(confirm("Are you sure you want to return to homepage? All progress will be undone.")){';
+// //     echo 'document.location = newurl;';
+// //     echo '}';
+// //     echo '}'; -->
+
+<!-- // // //     echo ' function quit(newurl){';
+// // //     echo 'if(confirm("Are you sure you want to quit? All progress will be undone.")){';
+// // //     echo 'document.location = newurl;';
+// // //     echo '}';
+// // //     echo '}';
+
+// // //     echo '</script>';
+// // // }
+// createConfirmationmbox(); -->
+
+
+<!-- // if(isset($_POST['nextbutton'])){
+//     if(!empty($_POST['fav_vehicle'])){
+//         $vehiclechoice=$_POST['fav_vehicle'];
+//         if($vehiclechoice=="BUS"){
+//             $minutes=$minutes+10;//time=1120
+//             $luck=$luck-rand(0,5);//luck=95
+
+//             header("Location: page11.html");
+//         }
+//         else if($vehiclechoice=="BIKE"){
+//             $wallet=$wallet-rand(100,150);//wallet=350
+//             $minutes=$minutes+5;//time=1105
+//             $luck=$luck-rand(10,20);//luck=80
+
+//             header("Location: page3.html");
+//         }
+        
+//       }
+//     else {
+//         echo "<script>alert('Please choose a vehicle.')</script>";
+//     }
+// } -->
+
+<!-- // $_SESSION['wallet']=$wallet;
+// $_SESSION['hours']=$hours;
+// $_SESSION['minutes']=$minutes;
+// $_SESSION['luck']=$luck;
+
+// unset($_POST['nextbutton']);
+// mysqli_close($conn); -->
+
+<!-- ?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/manclip.jpg">
+    <link rel="stylesheet" href="scenario1css/page2style.css">
+    <title>Tour to UIU 2</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <table>
+            <tr style="height:120px ;">
+                <td>
+                    <abbr title="Click to go back to home">
+                        <a href="javascript:homepage('../homepage.php');">
+                            <img src="../img/manclip.jpg" height="120px" width="150px" style="border-radius: 10px;">
+                            <br>
+                        </a>
+                    </abbr>
+                </td>
+
+                <td>
+                    <div class="entry">
+                        <!-- <img src="../img/manclip.jpg" height="70px" width="70px" style="border-radius:50% ;"> -->
+                        <a href="javascript:logout('../logout.php');">
+                            <img src="../img/logout.png" style="margin-bottom:20px; border-radius: 5px;">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr style="height: 450px;">
+                <td style="width: 40%;;">
+                    <!-- <img src="../img/dhnlake.jpg" height="420px" width="650px" style="border-radius: 10px;" > -->
+                </td>
+                <td>
+                    <form method="post">
+                        <table>
+                            <tr style="height: 30px;padding: 0px;margin: 0px;">
+                                <td style="height: 50px;width: 300px;">
+                                    <div class="background">
+                                        <div class="transbox" style="float: left;">
+                                            <p>Wallet:
+                                                <?php echo $wallet; ?>
+                                            </p>
+                                        </div>
+                                </td>
+
+                                <td style="height: 30px;width: 300px;">
+                                    <div class="background">
+                                        <div class="transbox">
+                                            <p>Time:
+                                                <?php 
+                                                    if($minutes<10){ echo $hours.":0".$minutes; }
+                                                    else{ echo $hours.":".$minutes; }
+                                                ?>
+                                            </p>
+                                        </div>
+                                </td>
+                            </tr>
+
+                            <tr style="margin:0px;padding:0px;height: 160px;">
+                                <td colspan="2" style="height: 100px;">
+                                    <div class="background" style="text-align: center;padding: 0px;">
+                                        <div class="transbox"
+                                            style="padding: 5px;background-color: rgb(12, 201, 128);width: 400px;margin-right:90px;">
+                                            <p style="padding: 10px;font-size: 24px;">
+                                                It is 7 AM. You need to reach UIU campus within 9AM because you've exam.
+                                                You got 300 Taka. And you are starting from Dhanmondi. Save some money
+                                                for
+                                                food too.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="bus" style="background-color:#2069c9;">
+                                <td style="height: 40px;width: 300px; border-radius: 10px;">
+                                        <input type="radio" id="bus" name="fav_vehicle" value="BUS">
+                                        <label style="font-size: 20px;" for="bus">
+                                            Bus (Less Than Tk.50)
+                                        </label><br>
+                                </td>
+                            </tr>
+
+                            <tr style="background-color:#2069c9; ">
+                                <td style="height: 40px;width: 300px; border-radius: 10px;">
+                                    <input type="radio" id="bike" name="fav_vehicle" value="BIKE">
+                                    <label style="font-size: 20px;" for="bike">
+                                        Bike (TK. 100-150)
+                                    </label><br>
+                                </td>
+                            </tr>
+
+                            <tr style="height: 90px;">
+                                <td style="height: 50px;width: 150px;">
+                                    <div class="background">
+                                        <button name="nextbutton">
+                                            <div class="transbox" style="float: left;">
+                                                <p>Next</p>
+                                            </div>
+                                        </button>
+                                </td>
+
+                                <td style="height: 30px;width: 150px;">
+                                    <div class="background">
+                                        <!-- <a href="javascript:quit('page1.html');"> -->
+                                        <a href="page1.html">
+                                            <div class="transbox">
+                                                <p>Quit</p>
+                                            </div>
+                                        </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+
+</html>

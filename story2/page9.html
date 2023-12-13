@@ -1,0 +1,205 @@
+<!-- <?php -->
+
+<!-- include('../db_connect.php');
+
+session_start();
+
+$wallet=$_SESSION['wallet'];
+$hours=$_SESSION['hours'];
+$minutes=$_SESSION['minutes'];
+$luck=$_SESSION['luck'];
+
+if(isset($_SESSION['username'])){
+    $username = $_SESSION['username'];
+    $_SESSION['username'] = $username;
+}
+
+if($wallet<50 && $hours>=13){
+    $message="Why did you even come here?";
+}
+else if($wallet==0){
+    if($minutes<10){
+        $message="It is ".$hours.":0".$minutes.". You have arrived in Gulistan, but how will you return home?";
+    }
+    else{
+        $message="It is ".$hours.":".$minutes.". You have arrived in Gulistan, but how will you return home?";
+    }
+}
+else if($wallet<50){
+    if($minutes<10){
+        $message="It is ".$hours.":0".$minutes.". You have safely arrived in Gulistan, but maybe a pair of socks is all you can buy.";
+    }
+    else{
+        $message="It is ".$hours.":".$minutes.". You have safely arrived in Gulistan, but maybe a pair of socks is all you can buy.";
+    }
+    
+}
+else if($hours>=13){
+    if($minutes<10){
+        $message="It is ".$hours.":0".$minutes.". You have safely arrived in Gulistan, but go home soon.";
+    }
+    else{
+        $message="It is ".$hours.":".$minutes.". You have safely arrived in Gulistan, but go home soon.";
+    }
+}
+else{
+    $message="You have safely arrived in Gulistan. Enjoy your shopping";
+}
+
+$_SESSION['wallet']=$wallet;
+$_SESSION['hours']=$hours;
+$_SESSION['minutes']=$minutes;
+$_SESSION['luck']=$luck;
+
+unset($_POST['nextbutton']);
+
+$score=$wallet+(13-($hours+$minutes))+$luck;
+
+
+$sql = "SELECT * FROM players WHERE username='$username'";
+$result=mysqli_query($conn,$sql);
+$user=mysqli_fetch_assoc($result);
+mysqli_free_result($result);
+$previousscore=$user['s1score'];
+if($score>$previousscore){
+    $sql = "UPDATE players
+            SET s1score='$score'
+            WHERE username='$username';";
+    $result = mysqli_query($conn, $sql);
+}
+
+mysqli_close($conn); -->
+
+<!-- ?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="../images/favicon.png"> -->
+    <link rel="stylesheet" href="scenario1css/page9style.css">
+    <title>Tour to UIU 9</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <table>
+            <tr style="height:120px ;">
+                <td>
+                    <abbr title="Click to go back to home">
+                        <a href="homepage.php">
+                            <img src="../img/fielduiu.jpg " height="70px" width="200px"> <br>
+                        </a>
+                    </abbr>
+
+                </td>
+                <td>
+                    <div class="entry">
+                        <a href="logout.php">
+                            <img src="../img/logout.png" style="margin-bottom:20px ;">
+                        </a>
+
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr style="height: 450px;">
+
+                <td style="width: 40%;">
+                    <img src="../img/fielduiu.jpg" height="420px">
+                </td>
+                <td>
+                    <form method="post">
+                        <table>
+                            <tr style="height: 30px;padding: 0px;margin: 0px;">
+                                <td style="height: 50px;width: 300px;">
+                                    <div class="background">
+
+                                        <div class="transbox" style="float: left;">
+                                            <p>Wallet:
+                                                <?php echo $wallet; ?>
+                                            </p>
+                                        </div>
+
+
+
+                                </td>
+                                <td style="height: 30px;width: 300px;">
+                                    <div class="background">
+
+                                        <div class="transbox">
+                                            <p>Time:
+                                                <?php 
+                                                    if($minutes<10){ echo $hours.":0".$minutes; }
+                                                    else{ echo $hours.":".$minutes; }
+                                            ?>
+                                            </p>
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr style="margin:0px;padding:0px;height: 160px;">
+                                <td colspan="2" style="height: 100px;">
+                                    <div class="background" style="text-align: center;padding: 0px;">
+
+                                        <div class="transbox"
+                                            style="padding: 5px;background-color: black;width: 400px;margin-right:90px">
+                                            <p style="padding: 10px;font-size: 24px;">
+                                                <?php echo $message; ?>
+                                                You got an accident!
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </td>
+                            </tr>
+
+                            <tr style="height: 90px;">
+                                <td style="height: 50px;width: 150px;">
+                                    <div class="background">
+                                        <a href="page1.php">
+                                            <a href="page1.html">
+                                                <div class="transbox" style="float: left;">
+                                                    <p>Play Again</p>
+                                                </div>
+                                                </button>
+                                </td>
+
+                                <td style="height: 50px;width: 150px;">
+                                    <div class="background">
+                                        <a href="page1.php">
+                                            <div class="transbox" style="float: left;">
+                                                <p>Score:
+                                                    <?php echo $score; ?>
+                                                </p>
+                                            </div>
+                                            </button>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </form>
+
+
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

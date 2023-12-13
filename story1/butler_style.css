@@ -1,0 +1,252 @@
+body{
+    
+    background-image: url("img/clue-header.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: -410px 0px;
+    max-width: 100vw;
+    
+
+}
+
+.nav-bar{
+  height: 35px;
+  background-color: rgb(202, 179, 179);
+  margin-top: -18px;
+  margin-left: -8px;
+  margin-right: -8px;
+  
+
+}
+
+.nav-bar ul{
+  overflow: hidden;
+  list-style-type: none;
+
+}
+
+.nav-bar li{
+
+  float: right;
+  border-right:1px solid brown;
+
+
+}
+
+.nav-bar li a{
+
+  display: block;
+  color: black;
+  background-color: #cf7724;
+  text-align: center;
+  padding: 8.4px 11.5px;
+  text-decoration: none;
+
+}
+
+.nav-bar li a:hover {
+  background-color: #9c1313;
+}
+
+.nav-bar .game-name{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 9.5px 11.5px;
+  text-decoration: none;
+}
+
+.nav-bar li:last-child{
+
+  border-right: none;
+}
+
+
+.Butler_room{
+
+  width: 98%;
+  height: 95%;
+  position: absolute;
+  background-image: url("butler/butler\ bedroom.png");
+  background-repeat: no-repeat ;
+  background-size: contain;
+  background-position: center;
+}
+
+.dialogue-box {
+  background-image: url("img/Asset\ 1.png");
+  width: 70%;
+  height: 34%;
+  position: absolute;
+  background-repeat: no-repeat ;
+  background-size: contain;
+  top: 30%;
+  left: 23%;
+
+}
+
+.dialogue-box .text{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  
+}
+
+
+.dialogue-box .text p{
+
+  font-family: 'Advent Pro';
+
+  font-weight: bold;
+  
+  font-size: large;
+
+  line-height: 1.5;
+
+  color: rgb(76, 18, 18);
+
+  padding-left: 80px;
+  padding-right: 80px;
+  
+}
+
+.dialogue-box button{
+
+  font-family: 'Advent Pro';
+  font-weight: bolder;
+  color: rgb(245, 48, 48);
+  background-color: coral;
+  margin-top: 18%;
+  margin-left: 61%;
+  padding: 2px 5px 2px 5px;
+  font-size: medium;
+}
+
+.boots{
+  display: none;
+  position: absolute;
+  top: 71.5%;
+  left: 30%;
+}
+
+.boots img{
+
+  width: 16%;
+  height: 16%;
+
+}
+
+.boots:hover{
+
+  filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
+
+.boots2{
+  display: none;
+  position: absolute;
+  top: 1%;
+  left: 33%;
+}
+
+.boots2 img{
+
+  width: 70%;
+  height: 70%;
+
+}
+
+.wardrobe{
+  display: none;
+  position: absolute;
+  top: 44.9%;
+  left: 72%;
+
+}
+
+.wardrobe img{
+
+  width: 81.7%;
+  height: 81.2%;
+
+}
+
+.wardrobe:hover{
+
+  filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
+
+.wardrobe-select{
+  display: none;
+  position: absolute;
+  top: 1%;
+  left: 30%;
+  
+}
+
+.wardrobe-select img{
+  width: 53%;
+  height: 53%;
+}
+
+.drawer-select{
+  display: none;
+  position: absolute;
+  top: 34.2%;
+  left: 41.15%;
+}
+
+.drawer-select img{
+  width: 53%;
+  height: 53%;
+}
+
+.drawer-select :hover{
+
+  filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
+
+.drawer2-select{
+  display: none;
+  position: absolute;
+  top: 46.25%;
+  left: 41.15%;
+}
+
+.drawer2-select img{
+  width: 53%;
+  height: 53%;
+}
+
+.drawer2-select :hover{
+
+  filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
+
+.bullets{
+  display: none;
+  position: absolute;
+  top: 1%;
+  left: 30%;
+}
+
+.bullets img{
+  width: 95%;
+  height: 95%;
+}
+
+.to-living-room{
+
+  
+  display: none;
+  font-family: 'Advent Pro';
+  font-weight: bolder;
+  color: rgb(245, 48, 48);
+  background-color: coral;
+  margin-left: 75%;
+  margin-top: 10px;
+  padding: 2px 5px 2px 5px;
+  font-size: medium;
+
+}

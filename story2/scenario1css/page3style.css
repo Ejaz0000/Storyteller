@@ -1,0 +1,76 @@
+body{
+    /* background-image: url('../img/clrrun.jpg'); */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    width:70%;
+    height: 600px;
+    margin: auto;
+    margin-top: 25px;
+    background-image: url('../img/dhnlake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+}
+
+table{
+    margin: auto;
+    color: #f0eeee;
+}
+
+tr,td{
+    border: 0px solid white;
+    padding: 0px;
+}
+
+.entry{
+    text-align: right;
+    letter-spacing: 20px;
+    margin-top: 10px;
+    margin-right: -550px;
+   
+}
+
+.entry >a> img{
+    height: 35px;
+    border-style: double;
+    /* margin-left: 50em    ; */
+}
+
+.entry >a> img:hover{
+    box-shadow: 1px 1px 1px 1px #f0eeee;
+}
+
+div.transbox {
+    float: right;
+    background-color:#f70ed8;
+    border: 0px solid black;
+    padding: 5px;
+    opacity: 0.8;
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  
+  div.transbox p {
+    margin: 0px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    
+  }
+
+    
+  div.transbox:hover {
+  
+    opacity: 1.0;
+   
+  }
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,224 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav-bar{
+    height: 35px;
+    background-color: rgb(202, 179, 179);
+    margin-top: -18px;
+    width: 100vw;
+  
+  }
+  
+  .nav-bar ul{
+    overflow: hidden;
+    list-style-type: none;
+  
+  }
+  
+  .nav-bar li{
+  
+    float: right;
+    border-right:1px solid brown;
+  
+  
+  }
+  
+  .nav-bar li a{
+  
+    display: block;
+    color: black;
+    background-color: #cf7724;
+    text-align: center;
+    padding: 8.4px 11.5px;
+    text-decoration: none;
+  
+  }
+  
+  .nav-bar li a:hover {
+    background-color: #9c1313;
+  }
+  
+  .nav-bar .game-name{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 9.5px 11.5px;
+    text-decoration: none;
+  }
+  
+  .nav-bar li:last-child{
+  
+    border-right: none;
+  }
+
+
+  .main{
+    
+    background-image: url("bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 95.2vh;
+
+  }
+
+  .mall{
+    background-image: url("mall.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 85vw;
+    height: 95.2vh;
+    margin-left: 7%;
+    margin-bottom: 0;
+    
+  }
+
+
+  .dialogue {
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 25%;
+    left: 30%;
+    
+  }
+  
+  .front-layer {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    background-color: #c7c3c3;
+    
+    z-index: 1;
+  }
+  
+  .back-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    height: 350px;
+    width: 550px;
+    background-color: #2e0a0a;
+    z-index: 0;
+    opacity: 0.6;
+  }
+
+  .dialogue .text{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    
+  }
+  
+  .dialogue .text h1{
+    text-align: center;
+    font-weight: bolder;
+    left: 200px;
+  }
+  
+  .dialogue .text p{
+  
+    font-family: 'Advent Pro';
+  
+    font-weight: bold;
+    
+    font-size: large;
+  
+    line-height: 1.5;
+  
+    color: rgb(76, 18, 18);
+  
+    padding-left: 30px;
+    padding-right: 30px;
+    
+  }
+
+  .dialogue button{
+    
+
+    font-family: 'Advent Pro';
+    font-weight: bolder;
+    color: rgb(245, 48, 48);
+    background-color: coral;
+    margin-left: 80%;
+    padding: 2px 5px 2px 5px;
+    font-size: medium;
+  }
+
+  .map{
+    display: none;
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background: #c7c3c3;
+    left: 25%;
+    top: 10%;
+    border: 5px solid #9c1313;
+    border-radius: 10px;
+  }
+
+  .sections{
+    
+    position: relative;
+    top: 7%;
+    left: 15%;
+  }
+
+  .s1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: blue;
+    cursor: pointer;
+  }
+  .s2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 150px;
+    background: rgb(108, 108, 189);
+    cursor: pointer;
+  }
+  .s3{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 300px;
+    background: rgb(109, 109, 119);
+    cursor: pointer;
+  }
+  .s4{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 300px;
+    top: 150px;
+    background: rgb(24, 24, 62);
+    cursor: pointer;
+  }
+
+  .map h1{
+    font-size: 40px;
+    margin-left: 30px;
+
+  }
+
+  .map-back{
+    position: absolute;
+    font-family: 'Advent Pro';
+    font-weight: bolder;
+    color: rgb(245, 48, 48);
+    background-color: coral;
+    left: 90%;
+    top: 30px;
+    padding: 2px 5px 2px 5px;
+    font-size: medium;
+
+  }

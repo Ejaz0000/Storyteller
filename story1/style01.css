@@ -1,0 +1,207 @@
+body{
+    
+    background-image: url("img/clue-header.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: -410px 0px;
+    max-width: 100vw;
+    
+
+}
+
+.nav-bar{
+  height: 35px;
+  background-color: rgb(202, 179, 179);
+  margin-top: -18px;
+  margin-left: -8px;
+  margin-right: -8px;
+  
+
+}
+
+.nav-bar ul{
+  overflow: hidden;
+  list-style-type: none;
+
+}
+
+.nav-bar li{
+
+  float: right;
+  border-right:1px solid brown;
+
+
+}
+
+.nav-bar li a{
+
+  display: block;
+  color: black;
+  background-color: #cf7724;
+  text-align: center;
+  padding: 8.4px 11.5px;
+  text-decoration: none;
+
+}
+
+.nav-bar li a:hover {
+  background-color: #9c1313;
+}
+
+.nav-bar .game-name{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 9.5px 11.5px;
+  text-decoration: none;
+}
+
+.nav-bar li:last-child{
+
+  border-right: none;
+}
+
+
+.living_room{
+
+  width: 98%;
+  height: 95%;
+  position: absolute;
+  background-image: url("living_room/living_room.png");
+  background-repeat: no-repeat ;
+  background-size: contain;
+  background-position: center;
+}
+
+.butler{
+    position: absolute;
+    top: 28%;
+    left: 22%;
+  }
+  
+  
+  .butler:hover{
+  
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+  }
+
+  .wife{
+    position: absolute;
+    top: 27%;
+    left: 46%;
+  }
+
+  .wife img{
+    width: 85% ;
+    height: 85%;
+  }
+  
+  
+  .wife:hover{
+  
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+  }
+
+  .brother{
+    position: absolute;
+    top: 28%;
+    left: 67%;
+  }
+
+  .brother img{
+    width: 85% ;
+    height: 85%;
+  }
+  
+  
+  .brother:hover{
+  
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+  }
+
+  .dialogue-box {
+    background-image: url("img/Asset\ 1.png");
+    width: 70%;
+    height: 34%;
+    position: absolute;
+    background-repeat: no-repeat ;
+    background-size: contain;
+    top: 64%;
+    left: 23%;
+  
+  }
+  
+  .dialogue-box .text{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    
+  }
+  
+  .dialogue-box .text h1{
+    text-align: center;
+    font-weight: bolder;
+    left: 200px;
+  }
+  
+  .dialogue-box .text p{
+  
+    font-family: 'Advent Pro';
+  
+    font-weight: bold;
+    
+    font-size: large;
+  
+    line-height: 1.5;
+  
+    color: rgb(76, 18, 18);
+  
+    padding-left: 80px;
+    padding-right: 80px;
+    
+  }
+  
+  .dialogue-box .buttons{
+    
+    display: flex;
+    margin-top: 17%;
+    margin-left: 48%;
+    
+  }
+
+  .buttons button{
+
+    font-family: 'Advent Pro';
+    font-weight: bolder;
+    color: rgb(245, 48, 48);
+    background-color: coral;
+    padding: 2px 5px 2px 5px;
+    font-size: medium;
+  }
+
+  .buttons .arrest{
+
+    display: none;
+    margin-right: 4%;
+  }
+
+  .buttons .back{
+
+    display: none;
+    margin-right: 4%;
+  }
+
+  .arrested{
+    display: none; 
+    position: absolute;
+    top: 1%;
+    left: 22%;
+  }
+  
+  .arrested img{
+    
+    width: 95%;
+    height: 95%;
+  }
